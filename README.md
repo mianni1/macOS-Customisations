@@ -7,16 +7,21 @@ I plan on adding more to this repo however there will be things that Apple do no
 ## Contents
 
 1. [Dark Mode Toggle](#dark-mode-toggle)
-2. [Software Installation](#software-installation)
-3. [Azure CLI Installation](#azure-cli-installation)
-4. [Remote Desktop Installation](#remote-desktop-installation)
-5. [Microsoft Defender Installation](#microsoft-defender-installation)
-6. [Gatekeeper Enable](#gatekeeper-enable)
-7. [Change MacBook Name](#change-macbook-name)
+2. [Rosetta 2 Installation](#rosetta-2-installation)
+3. [Software Installation](#software-installation)
+4. [Azure CLI Installation](#azure-cli-installation)
+5. [Remote Desktop Installation](#remote-desktop-installation)
+6. [Microsoft Defender Installation](#microsoft-defender-installation)
+7. [Gatekeeper Enable](#gatekeeper-enable)
+8. [Change MacBook Name](#change-macbook-name)
 
 ## Dark Mode Toggle
 
 The `setup_macos.sh` script turns dark mode on because light mode is gross.
+
+## Rosetta 2 Installation
+
+The `setup_macos.sh` script installs Rosetta 2. This is essential for running applications that are not yet optimised optimsed for the M1/M2 chipset on Apple Silicon Macs.
 
 ## Software Installation
 
@@ -48,3 +53,4 @@ The `setup_macos.sh` script enables Gatekeeper on macOS. Enabling Gatekeeper is 
 ## Change MacBook Name
 
 The `setup_macos.sh` script changes the MacBook name to "Massimo's Nespresso Machine". This includes changing the hostname, local hostname, and computer name.
+

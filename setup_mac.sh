@@ -3,6 +3,9 @@
 # Toggle Dark Mode
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
 
+# Install Rosetta 2
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
@@ -28,7 +31,7 @@ brew install --cask discord
 brew install --cask microsoft-defender
 
 # Install Azure CLI
-brew install azure-cli
+brew update && brew install azure-cli
 
 # Install Microsoft Remote Desktop
 brew install --cask microsoft-remote-desktop
@@ -40,3 +43,6 @@ sudo spctl --master-enable
 sudo scutil --set HostName "Massimo's Nespresso Machine"
 sudo scutil --set LocalHostName "MassimosNespressoMachine"
 sudo scutil --set ComputerName "Massimo's Nespresso Machine"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Massimo's Nespresso Machine"
+
+
