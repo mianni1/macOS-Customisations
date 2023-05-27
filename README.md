@@ -1,6 +1,6 @@
 # MacOS Setup Scripts
 
-This repository contains shell scripts for setting up some of the things I like to have in my macOS environment.
+This repository contains shell scripts for setting up some of the things I like to have in my macOS environment. In addition to setting up software and preferences, the script can also change the name of your MacBook.
 
 I plan on adding more to this repo however there will be things that Apple do not allow to be modified with scripts such as enabling FileVault and escrowing the key to a logged in iCloud account :(
 
@@ -10,11 +10,13 @@ I plan on adding more to this repo however there will be things that Apple do no
 2. [Software Installation](#software-installation)
 3. [Azure CLI Installation](#azure-cli-installation)
 4. [Remote Desktop Installation](#remote-desktop-installation)
-5. [Gatekeeper Enable](#gatekeeper-enable)
+5. [Microsoft Defender Installation](#microsoft-defender-installation)
+6. [Gatekeeper Enable](#gatekeeper-enable)
+7. [Change MacBook Name](#change-macbook-name)
 
 ## Dark Mode Toggle
 
-The `setup_macos.sh` script toggles between dark and light mode on macOS.
+The `setup_macos.sh` script turns dark mode on because light mode is gross.
 
 ## Software Installation
 
@@ -33,8 +35,16 @@ The `setup_macos.sh` script installs the Azure CLI.
 
 ## Remote Desktop Installation
 
-The `setup_macos.sh` script installs Microsoft Remote Desktop.
+The `setup_macos.sh` script installs Microsoft Remote Desktop. Useful for creating sessions with Azure workspaces or connecting to Win clients that have RDP enabled.
+
+## Microsoft Defender Installation
+
+The `setup_macos.sh` script installs Microsoft Defender. Decent AV, especially if you have MDE licensing. Worth noting you will need a license and also have to onboard the device to MDE after installing Defender on the Mac. For more information, check [this link](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-worldwide).
 
 ## Gatekeeper Enable
 
-The `setup_macos.sh` script enables Gatekeeper on macOS.
+The `setup_macos.sh` script enables Gatekeeper on macOS. Enabling Gatekeeper is a good security measure to prevent unsigned binaries or applications without identified devs from being executed on the device.
+
+## Change MacBook Name
+
+The `setup_macos.sh` script changes the MacBook name to "Massimo's Nespresso Machine". This includes changing the hostname, local hostname, and computer name.
