@@ -14,6 +14,7 @@ I plan on adding more to this repo however there will be things that Apple do no
 6. [Change MacBook Name](#change-macbook-name)
 7. [Microsoft Defender Installation](#microsoft-defender-installation)
 8. [Enable Three Finger Drag](#enable-three-finger-drag)
+9. [macOS-Firewall-Configuration](#macos-firewall-configuration)
 
 ## Dark Mode Toggle
 
@@ -57,6 +58,14 @@ The 'defender_configuration.sh' script configures Microsoft Defender to my likin
 ## Enable Three Finger Drag
 
 The `setup_macos.sh` script enables Three Finger Drag for the built-in trackpad and any connected Bluetooth trackpad.
+
+# macOS Firewall Configuration
+
+The `setup_macos.sh` script enables the macOS firewall and configures it to block all incoming connections. This is a good security measure to prevent unwanted incoming connections to your device but can be a pain when doing ping tests from other clients as all ICMP traffic is dropped. If you want to allow incoming ICMP traffic, you can remove turn it off using the following command:
+
+```bash
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode off
+```
 
 ## References
 
