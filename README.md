@@ -36,6 +36,10 @@ The `setup_macos.sh` script installs Homebrew. If the Homebrew installation is s
 - Azure CLI
 - Microsoft Remote Desktop
 
+## Automatic Software Updates
+
+The `setup_macos.sh` script enables automatic software updates.
+
 ## Gatekeeper Enable
 
 The `setup_macos.sh` script enables Gatekeeper on macOS. Enabling Gatekeeper is a good security measure to prevent unsigned binaries or applications without identified developers from being executed on the device.
@@ -49,6 +53,10 @@ The `setup_macos.sh` script changes the MacBook name to "Massimo's Nespresso Mac
 The `setup_macos.sh` script installs Microsoft Defender. Decent AV software, especially if you have MDE licensing. Worth noting you will need sufficient privileges to install and also have to onboard the device to MDE after installing Defender on the Mac. The script will unzip `WindowsDefenderATPOnboardingPackage.zip` from the Downloads directory. After unzipping, a `.sh` file named `MicrosoftDefenderATPOnboardingMacOs.sh` should be in the same directory, which will need to be executed. Make sure to edit the location of the `.zip` file in the script if it's not in the Downloads directory. For more information, check [this link](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-install-manually?view=o365-worldwide).
 
 The 'defender_configuration.sh' script configures Microsoft Defender to my liking enabling and disabling features after installation, check [this link](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/mac-configuration?view=o365-worldwide) out for more info if you're interested in configuring Defender on macOS.
+
+## Enable Three Finger Drag
+
+The `setup_macos.sh` script enables Three Finger Drag for the built-in trackpad and any connected Bluetooth trackpad.
 
 ## References
 
