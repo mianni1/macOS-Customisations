@@ -50,3 +50,9 @@ source defender_configuration.sh
 # Enable Three Finger Drag
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+
+#Enable Firewall & Stealth Mode
+echo "Enabling Firewall & Stealth Mode..."
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setglobalstate on
+sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
+
