@@ -9,6 +9,9 @@ osascript -e 'tell application "System Events" to tell appearance preferences to
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
+# Enable automatic software updates
+sudo softwareupdate --schedule on
+
 # Check if Homebrew is installed
 if command -v brew &>/dev/null; then
     echo "Homebrew is installed, proceeding with brew casks installation..."
@@ -44,4 +47,6 @@ fi
 # Execute defender_configuration.sh for defender related configurations
 source defender_configuration.sh
 
-
+# Enable Three Finger Drag
+defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true

@@ -9,9 +9,11 @@ I plan on adding more to this repo however there will be things that Apple do no
 1. [Dark Mode Toggle](#dark-mode-toggle)
 2. [Rosetta 2 Installation](#rosetta-2-installation)
 3. [Homebrew and Software Installation](#homebrew-and-software-installation)
-4. [Gatekeeper Enable](#gatekeeper-enable)
-5. [Change MacBook Name](#change-macbook-name)
-6. [Microsoft Defender Installation](#microsoft-defender-installation)
+4. [Automatic Software Updates](#automatic-software-updates)
+5. [Gatekeeper Enable](#gatekeeper-enable)
+6. [Change MacBook Name](#change-macbook-name)
+7. [Microsoft Defender Installation](#microsoft-defender-installation)
+8. [Enable Three Finger Drag](#enable-three-finger-drag)
 
 ## Dark Mode Toggle
 
