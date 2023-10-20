@@ -12,7 +12,7 @@
 			<key>PayloadType</key>
 			<string>com.microsoft.wdav</string>
 			<key>PayloadUUID</key>
-			<string>47FAE9FE-F218-4878-ACD0-D449F4C9E3A0</string>
+			<string>CFB42300-B7B4-45BA-B846-2A28AB1D3FD2</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>antivirusEngine</key>
@@ -20,11 +20,13 @@
 				<key>enableFileHashComputation</key>
 				<string>enabled</string>
 				<key>enforcementLevel</key>
-				<string>on_demand</string>
+				<string>real_time</string>
 				<key>exclusionsMergePolicy</key>
 				<string>admin_only</string>
 				<key>maximumOnDemandScanThreads</key>
-				<integer>2</integer>
+				<integer>4</integer>
+				<key>scanResultsRetentionDays</key>
+				<string>14</string>
 				<key>threatTypeSettings</key>
 				<array>
 					<dict>
@@ -90,7 +92,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>ABA663B7-0B89-4D33-961E-04FA3F939082</string>
+	<string>12665819-F177-463C-99B9-0DB4170DEDE3</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
